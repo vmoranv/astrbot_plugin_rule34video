@@ -1,0 +1,49 @@
+{
+    "proxy": {
+        "description": "代理服务器地址，如 http://127.0.0.1:7890",
+        "type": "string",
+        "hint": "留空则不使用代理",
+        "default": ""
+    },
+    "mosaic_level": {
+        "description": "图片马赛克程度 (0-100)，0为不打码",
+        "type": "int",
+        "default": 70
+    },
+    "blur_level": {
+        "description": "图片模糊程度 (0-100)，0为不模糊",
+        "type": "int",
+        "default": 0
+    },
+    "default_quality": {
+        "description": "默认视频质量",
+        "type": "string",
+        "options": ["best", "720p", "480p", "360p", "worst"],
+        "default": "best"
+    },
+    "max_search_results": {
+        "description": "搜索结果最大数量",
+        "type": "int",
+        "default": 10
+    },
+    "request_timeout": {
+        "description": "请求超时时间（秒）",
+        "type": "int",
+        "default": 30
+    },
+    "cache_ttl_hours": {
+        "description": "缓存文件保留时间（小时）",
+        "type": "int",
+        "default": 24
+    },
+    "show_thumbnail": {
+        "description": "是否显示视频缩略图",
+        "type": "bool",
+        "default": true
+    },
+    "send_video_file": {
+        "description": "是否发送视频文件（否则只发送链接）",
+        "type": "bool",
+        "default": false
+    }
+}
